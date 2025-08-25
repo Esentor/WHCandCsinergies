@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Azazel",
+        "bonuses":[
+            {
+                "unit": "Chariots",
+                "type": "Health",
+                "bonus": "45%"
+            },
+            {
+                "god": "Slaanesh",
+                "type": "Melee damage",
+                "bonus": "45%"
+            },
+            {
+                "unit": "monsters",
+                "type": "Ranged damage",
+                "bonus": "45%"
+            },
+            {
+                "god": "Slaanesh",
+                "type": "Health",
+                "bonus": "40%"
+            },
+            {
+                "god": "Slaanesh",
+                "type": "Ranged damage",
+                "bonus": "45%",
+                "rank6": true
+            } 
+        ]
+    },
+    {
+        "name": "The Blue Scribes",
+        "bonuses":[
+            {
+                "unit": "Monstruos infantry",
+                "type": "Ranged attack",
+                "bonus": "45%"
+            },
+            {
+                "god": "Tzeentch",
+                "type": "Speed",
+                "bonus": "45%"
+            },
+            {
+                "unit": "Monsters",
+                "type": "Armor",
+                "bonus": "45%"
+            },
+            {
+                "god": "Tzeentch",
+                "type": "Melee attack",
+                "bonus": "45%",
+                "rank6": true
+            } 
+        ]
+    }
+]

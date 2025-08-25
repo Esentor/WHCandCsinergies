@@ -35,3 +35,23 @@ export function uniqueName() {
 }
 
 export const uploadDisabled = process.env.NEXT_PUBLIC_DISABLE_UPLOADS?.toLowerCase() === "true";
+
+export function findSynergies(unit, warlord){
+
+    var appliccableBonuses = [];
+
+    warlord.bonuses.map((bonus) => {
+        if(bonus.unit === unit.type){
+            appliccableBonuses.push(bonus);
+        }
+        if(bonus.god === unit.god){
+            appliccableBonuses.push(bonus);
+        }
+    })
+
+    return <li>
+        {appliccableBonuses.map((bonus) => (
+            <ul> {bonus.god ? bonus.god + ": " + bonus.type + " " + bonus.bonus : bonus.unit + ": " + bonus.type + " " + bonus.bonus } </ul>
+        ))}
+    </li>;
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Slaangors",
+        "type": "Monstruos infantry",
+        "god": "Slaanesh",
+        "melee attack": 40,
+        "melee damage": 1150,
+        "ranged attack": 69,
+        "ranged damage": 1000,
+        "health": 1400,
+        "armor": 42,
+        "speed": 7
+    }
+]
