@@ -10,5 +10,17 @@
         "health": 1400,
         "armor": 42,
         "speed": 7
+    },
+    {
+        "name": "Tzaangors",
+        "type": "Monstruos infantry",
+        "god": "Tzeentch",
+        "melee attack": 15,
+        "melee damage": 200,
+        "ranged attack": 60,
+        "ranged damage": 1200,
+        "health": 1000,
+        "armor": 28,
+        "speed": 7
     }
 ]

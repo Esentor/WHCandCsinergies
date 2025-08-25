@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { uniqueNamesGenerator, adjectives, animals, NumberDictionary } from 'unique-names-generator';
 
 /*
@@ -47,11 +48,22 @@ export function findSynergies(unit, warlord){
         if(bonus.god === unit.god){
             appliccableBonuses.push(bonus);
         }
+        if(!bonus.god && !bonus.unit){
+            appliccableBonuses.push(bonus);
+        }
     })
+
+    if(appliccableBonuses.length == 0){
+        return "None";
+    }
 
     return <li>
         {appliccableBonuses.map((bonus) => (
-            <ul> {bonus.god ? bonus.god + ": " + bonus.type + " " + bonus.bonus : bonus.unit + ": " + bonus.type + " " + bonus.bonus } </ul>
+            <Fragment>{bonus.god || bonus.unit ?
+                <ul> {bonus.god ? bonus.god + ": " + bonus.type + " " + bonus.bonus : bonus.unit + ": " + bonus.type + " " + bonus.bonus } </ul>
+            :
+                <ul> {bonus.type + " " + bonus.bonus} </ul>
+            }</Fragment>
         ))}
     </li>;
 }

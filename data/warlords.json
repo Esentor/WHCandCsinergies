@@ -55,5 +55,35 @@
                 "rank6": true
             } 
         ]
+    },
+    {
+        "name": "Vilitch",
+        "bonuses":[
+            {
+                "god": "Tzeentch",
+                "type": "Health",
+                "bonus": "45%"
+            },
+            {
+                "unit": "Chariots",
+                "type": "Ranged attack",
+                "bonus": "45%"
+            },
+            {
+                "god": "Tzeentch",
+                "type": "Ranged damage",
+                "bonus": "45%"
+            },
+            {
+                "god": "Tzeentch",
+                "type": "Armor",
+                "bonus": "45%"
+            },
+            {
+                "type": "March combat",
+                "bonus": "18.75%",
+                "rank6": true
+            } 
+        ]
     }
 ]
